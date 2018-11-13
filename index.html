@@ -1,0 +1,53 @@
+<html>
+<head>
+<style>
+#ron1{
+    visibility:hidden;
+  }
+  #ron2{
+    visibility:hidden;
+  }
+  #ron3{
+    visibility:hidden;
+  }
+  
+  
+</style>
+</head>
+<body>
+<p><button onclick="clickC()" type="button">Go Off!</button></p>
+<p id="result"></p>
+<br><img width="150" src="https://chumley.barstoolsports.com/wp-content/uploads/2018/09/13/beard.jpg" id="ron1">
+<img width="150" src="https://chumley.barstoolsports.com/wp-content/uploads/2018/09/13/beard.jpg" id="ron2">
+<img width="150" src="https://chumley.barstoolsports.com/wp-content/uploads/2018/09/13/beard.jpg" id="ron3">
+
+<script>
+var reso=0
+var reso1=1;
+function clickC() {
+  reso+=reso1;
+   document.getElementById("result").innerHTML = "count= " + reso + " times";
+
+    if(reso==5){
+    alert("Congrats U Just won a Prize");
+    document.getElementById("ron1").style.visibility="visible"
+    }
+  
+   if(reso==10){
+    alert("Your On Fire!!!!!!!");
+    document.getElementById("ron2").style.visibility="visible"
+    }
+     if(reso==20){
+    alert("Keep Shakin and Bakin");
+    document.getElementById("ron3").style.visibility="visible"
+    }
+    
+    
+    
+}
+
+
+
+</script>
+</body>
+</html>
